@@ -10,9 +10,9 @@ import 'my_dialogs.dart';
 
 class AdHelper {
   // for initializing ads sdk
- /* static Future<void> initAds() async {
+  static Future<void> initAds() async {
     await MobileAds.instance.initialize();
-  }*/
+  }
 
   static InterstitialAd? _interstitialAd;
   static bool _interstitialAdLoaded = false;
@@ -22,7 +22,7 @@ class AdHelper {
 
   //*****************Interstitial Ad******************
 
- /* static void precacheInterstitialAd() {
+  static void precacheInterstitialAd() {
     log('Precache Interstitial Ad - Id: ${Config.interstitialAd}');
 
     if (Config.hideAds) return;
@@ -48,14 +48,14 @@ class AdHelper {
       ),
     );
   }
-*/
-  /*static void _resetInterstitialAd() {
+
+  static void _resetInterstitialAd() {
     _interstitialAd?.dispose();
     _interstitialAd = null;
     _interstitialAdLoaded = false;
   }
-*/
-/*
+
+
   static void showInterstitialAd({required VoidCallback onComplete}) {
     log('Interstitial Ad Id: ${Config.interstitialAd}');
 
@@ -95,7 +95,7 @@ class AdHelper {
       ),
     );
   }
-*/
+
   //*****************Native Ad******************
 
   static void precacheNativeAd() {
@@ -127,7 +127,7 @@ class AdHelper {
     _nativeAd = null;
     _nativeAdLoaded = false;
   }
-/*
+
   static NativeAd? loadNativeAd({required NativeAdController adController}) {
     log('Native Ad Id: ${Config.nativeAd}');
 
@@ -158,7 +158,7 @@ class AdHelper {
             NativeTemplateStyle(templateType: TemplateType.small))
       ..load();
   }
-*/
+
   //*****************Rewarded Ad******************
 
   static void showRewardedAd({required VoidCallback onComplete}) {
