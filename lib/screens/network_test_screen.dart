@@ -17,7 +17,7 @@ class NetworkTestScreen extends StatelessWidget {
     APIs.getIPDetails(ipData: ipData);
 
     return Scaffold(
-      appBar: AppBar(title: Text('Network Test Screen')),
+      appBar: AppBar(title: Text('Pantalla de prueba de red')),
 
       //refresh button
       floatingActionButton: Padding(
@@ -42,7 +42,7 @@ class NetworkTestScreen extends StatelessWidget {
               //ip
               NetworkCard(
                   data: NetworkData(
-                      title: 'IP Address',
+                      title: 'Dirección IP',
                       subtitle: ipData.value.query,
                       icon: Icon(CupertinoIcons.location_solid,
                           color: Colors.blue))),
@@ -50,14 +50,14 @@ class NetworkTestScreen extends StatelessWidget {
               //isp
               NetworkCard(
                   data: NetworkData(
-                      title: 'Internet Provider',
+                      title: 'Proveedor de Internet',
                       subtitle: ipData.value.isp,
                       icon: Icon(Icons.business, color: Colors.orange))),
 
               //location
               NetworkCard(
                   data: NetworkData(
-                      title: 'Location',
+                      title: 'Ubicación',
                       subtitle: ipData.value.country.isEmpty
                           ? 'Fetching ...'
                           : '${ipData.value.city}, ${ipData.value.regionName}, ${ipData.value.country}',
@@ -66,7 +66,7 @@ class NetworkTestScreen extends StatelessWidget {
               //pin code
               NetworkCard(
                   data: NetworkData(
-                      title: 'Pin-code',
+                      title: 'Código pin',
                       subtitle: ipData.value.zip,
                       icon: Icon(CupertinoIcons.location_solid,
                           color: Colors.cyan))),
@@ -74,7 +74,7 @@ class NetworkTestScreen extends StatelessWidget {
               //timezone
               NetworkCard(
                   data: NetworkData(
-                      title: 'Timezone',
+                      title: 'Zona horaria',
                       subtitle: ipData.value.timezone,
                       icon: Icon(CupertinoIcons.time, color: Colors.green))),
             ]),

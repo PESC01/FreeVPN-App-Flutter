@@ -85,7 +85,7 @@ class HomeScreen extends StatelessWidget {
                   title: _controller.vpn.value.countryLong.isEmpty
                       ? 'PAIS'
                       : _controller.vpn.value.countryLong,
-                  subtitle: 'FREE',
+                  subtitle: 'LIBRE',
                   icon: CircleAvatar(
                     radius: 30,
                     backgroundColor: Colors.blue,

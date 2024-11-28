@@ -26,7 +26,7 @@ class LocationScreen extends StatelessWidget {
       () => Scaffold(
         //app bar
         appBar: AppBar(
-          title: Text('VPN Locations (${_controller.vpnList.length})'),
+          title: Text('UBICACIONES DE VPN (${_controller.vpnList.length})'),
         ),
 
         bottomNavigationBar:
@@ -76,7 +76,7 @@ class LocationScreen extends StatelessWidget {
 
             //text
             Text(
-              'Loading VPNs... 😌',
+              'Cargando VPN... 😌',
               style: TextStyle(
                   fontSize: 18,
                   color: Colors.black54,
@@ -88,7 +88,7 @@ class LocationScreen extends StatelessWidget {
 
   _noVPNFound() => Center(
         child: Text(
-          'VPNs Not Found! 😔',
+          '¡VPN no encontradas! 😔',
           style: TextStyle(
               fontSize: 18, color: Colors.black54, fontWeight: FontWeight.bold),
         ),
