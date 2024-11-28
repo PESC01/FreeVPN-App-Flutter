@@ -17,7 +17,7 @@ class HomeController extends GetxController {
 
   void connectToVpn() async {
     if (vpn.value.openVPNConfigDataBase64.isEmpty) {
-      MyDialogs.info(msg: 'Select a Location by clicking \'Change Location\'');
+      MyDialogs.info(msg: 'Seleccione una ubicación haciendo clic \'Cambiar ubicación\'');
       return;
     }
 
@@ -61,13 +61,13 @@ class HomeController extends GetxController {
   String get getButtonText {
     switch (vpnState.value) {
       case VpnEngine.vpnDisconnected:
-        return 'Tap to Connect';
+        return 'Toque para conectar';
 
       case VpnEngine.vpnConnected:
-        return 'Disconnect';
+        return 'Desconectar';
 
       default:
-        return 'Connecting...';
+        return 'Conectando...';
     }
   }
 }
