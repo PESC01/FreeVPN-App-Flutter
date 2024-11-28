@@ -61,7 +61,7 @@ class HomeController extends GetxController {
   String get getButtonText {
     switch (vpnState.value) {
       case VpnEngine.vpnDisconnected:
-        return 'Toque para conectar';
+        return 'Toque y Conecte';
 
       case VpnEngine.vpnConnected:
         return 'Desconectar';
