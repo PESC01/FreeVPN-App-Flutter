@@ -25,7 +25,7 @@ Future<void> main() async {
 
   await Pref.initializeHive();
 
-  await AdHelper.initAds();
+ // await AdHelper.initAds();
 
   //for setting orientation to portrait only
   await SystemChrome.setPreferredOrientations(
