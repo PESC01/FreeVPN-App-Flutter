@@ -83,7 +83,7 @@ class HomeScreen extends StatelessWidget {
               //country flag
               HomeCard(
                   title: _controller.vpn.value.countryLong.isEmpty
-                      ? 'Country'
+                      ? 'PAIS'
                       : _controller.vpn.value.countryLong,
                   subtitle: 'FREE',
                   icon: CircleAvatar(
@@ -124,7 +124,7 @@ class HomeScreen extends StatelessWidget {
                     //download
                     HomeCard(
                         title: '${snapshot.data?.byteIn ?? '0 kbps'}',
-                        subtitle: 'DOWNLOAD',
+                        subtitle: 'DESCARGA',
                         icon: CircleAvatar(
                           radius: 30,
                           backgroundColor: Colors.lightGreen,
@@ -135,7 +135,7 @@ class HomeScreen extends StatelessWidget {
                     //upload
                     HomeCard(
                         title: '${snapshot.data?.byteOut ?? '0 kbps'}',
-                        subtitle: 'UPLOAD',
+                        subtitle: 'SUBIDA',
                         icon: CircleAvatar(
                           radius: 30,
                           backgroundColor: Colors.blue,
@@ -212,7 +212,7 @@ class HomeScreen extends StatelessWidget {
                 color: Colors.blue, borderRadius: BorderRadius.circular(15)),
             child: Text(
               _controller.vpnState.value == VpnEngine.vpnDisconnected
-                  ? 'Not Connected'
+                  ? 'No Conectado'
                   : _controller.vpnState.replaceAll('_', ' ').toUpperCase(),
               style: TextStyle(fontSize: 12.5, color: Colors.white),
             ),
@@ -245,7 +245,7 @@ class HomeScreen extends StatelessWidget {
 
                   //text
                   Text(
-                    'Change Location',
+                    'Cambiar ubicación',
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 18,
